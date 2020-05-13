@@ -44,9 +44,9 @@ void Model3D::Initialize(GLsizei w, GLsizei h)
 
 	// Crea las figuras
 
-	//fig8 = new Star3D(5, 5.0f, 25.0f, 1.0f); // Para la estrella
+	//fig8 = new Star3D(5, 5.0f, 25.0f, 5.0f); // Para la estrella
 	fig8 = new Prueba(); // Para la estrella
-
+	//Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLfloat ancho);
 
 	
 	

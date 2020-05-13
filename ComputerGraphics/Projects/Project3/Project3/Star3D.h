@@ -14,7 +14,7 @@
 // 
 class Star3D : public Figure3D {
 public:
-	Star3D(GLfloat puntas, GLfloat radioInterior, GLfloat radioExterior, GLfloat ancho);
+	Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLfloat ancho);
 };
 
 

@@ -9,12 +9,16 @@
 
 using namespace std;
 
-Star3D::Star3D(GLfloat puntas, GLfloat radioInterior, GLfloat radioExterior, GLfloat ancho) {
+Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLfloat ancho) {
 
 	
 
 	// Nota: por cada triángulo que converge en un punto, 
 	// se consideran vértices distinto
+
+	
+
+	// Por ahora consideramos solo que vamos a hacer una cara
 	numFaces = puntas * 2; 
 	//            vertices por punta + vertices por puntas internas + vertices por centro
 	numVertices = (puntas * 2) + (2 * puntas) + (puntas * 2); 
@@ -30,10 +34,11 @@ Star3D::Star3D(GLfloat puntas, GLfloat radioInterior, GLfloat radioExterior, GLf
 	/**         CARA FRONTAL , PUNTA CENTRAL          **/
 
 	//CARA FRONTAL , PUNTA CENTRAL
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < (puntas*2); i++) {
+
 		vertices[verticesIndex] = 0.0f;	// X
 		vertices[verticesIndex + 1] = 0.0f;	// Y
-		vertices[verticesIndex + 2] = 5.0f;	// Z
+		vertices[verticesIndex + 2] = ancho;	// Z
 
 		verticesIndex += 3;
 	}
@@ -42,27 +47,27 @@ Star3D::Star3D(GLfloat puntas, GLfloat radioInterior, GLfloat radioExterior, GLf
 
 	/**         CARA FRONTAL , RADIO EXTERIOR          **/
 
-	float x; // coordenada x
-	float y; // coordenada y
-	float angulo = 0.5 * PI;
+	float numPuntas = (float)puntas;
+
+	// empezamos en EJEX = 0; EJE Y = PI/2; EJE Z = 0;
+	float angulo = 0.5 * PI; 
+	float anguloDeGiro = (2.0f / numPuntas) * PI;
+	
 
 	// Por cada punta
 	for (int i = 0; i < puntas; i++) {
 
-		x = radioExterior * cos(angulo);
-		y = radioExterior * sin(angulo);
-
 		// Se generan 2 vertices
 		for (int j = 0; j < 2; j++) {
-			vertices[verticesIndex] = (GLfloat)x;
-			vertices[verticesIndex + 1] = (GLfloat)y;
-			vertices[verticesIndex + 2] = 0.0f;
+			vertices[verticesIndex] = radioExterior * cos(angulo); // x
+			vertices[verticesIndex + 1] = radioExterior * sin(angulo); // y
+			vertices[verticesIndex + 2] = 0.0f; // z
 
 			verticesIndex += 3;
 		}
 
 		// incrementamos el angulo en 2*PI/puntas
-		angulo += (2.0f / puntas) * PI;
+		angulo += anguloDeGiro;
 	}
 
 
@@ -71,48 +76,39 @@ Star3D::Star3D(GLfloat puntas, GLfloat radioInterior, GLfloat radioExterior, GLf
 
 	// Creamos el primer vértice del radio interior fuera del bucle
 	// Necesario para automatizar la creacion de los triangulos
-	angulo = (1 / 2) * PI - (2 / (puntas*2)) * PI;
+	angulo = 0.5 * PI - (2.0f / (numPuntas*2)) * PI;
 
-	x = radioInterior * cos(angulo);
-	y = radioInterior * sin(angulo);
-	
-	vertices[verticesIndex] = (GLfloat)x;
-	vertices[verticesIndex + 1] = (GLfloat)y;
-	vertices[verticesIndex + 2] = 0.0f;
+	vertices[verticesIndex] = radioInterior * cos(angulo); // x
+	vertices[verticesIndex + 1] = radioInterior * sin(angulo); // y
+	vertices[verticesIndex + 2] = 0.0f; // z
 
 	verticesIndex += 3;
 
 	// incrementamos el angulo en 2*PI/puntas
-	angulo += (2 / puntas) * PI;
+	angulo += anguloDeGiro;
 
 	
 	// Se crean para puntas-1
 	for (int i = 0; i < puntas-1; i++) {
 
-		x = radioInterior * cos(angulo);
-		y = radioInterior * sin(angulo);
-
 		// Se generan 2 vertices
 		for (int j = 0; j < 2; j++) {
-			vertices[verticesIndex] = (GLfloat)x;
-			vertices[verticesIndex + 1] = (GLfloat)y;
-			vertices[verticesIndex + 2] = 0.0f;
+			vertices[verticesIndex] = radioInterior * cos(angulo); // x
+			vertices[verticesIndex + 1] = radioInterior * sin(angulo); // y
+			vertices[verticesIndex + 2] = 0.0f; // z
 
 			verticesIndex += 3;
 		}
 
 		// incrementamos el angulo en 2*PI/puntas
-		angulo += (2.0f / puntas) * PI;
+		angulo += anguloDeGiro;
 	}
 
 	// Creamos el último vértice interno manualmente, 
 	// al igual que el primero
-	x = radioInterior * cos(angulo);
-	y = radioInterior * sin(angulo);
-
-	vertices[verticesIndex] = (GLfloat)x;
-	vertices[verticesIndex + 1] = (GLfloat)y;
-	vertices[verticesIndex + 2] = 0.0f;
+	vertices[verticesIndex] = radioInterior * cos(angulo); // x
+	vertices[verticesIndex + 1] = radioInterior * sin(angulo); // y
+	vertices[verticesIndex + 2] = 0.0f; // z
 
 	verticesIndex += 3;
 
@@ -121,82 +117,26 @@ Star3D::Star3D(GLfloat puntas, GLfloat radioInterior, GLfloat radioExterior, GLf
 	/***         CREAMOS LOS TRIANGULOS         ***/
 
 	int indexesIndex = 0;
-	/*
-	indexes[indexesIndex] = 0;
-	indexes[indexesIndex + 1] = 20;
-	indexes[indexesIndex + 2] = 10;
-	indexesIndex += 3;
 
-	indexes[indexesIndex] = 1;
-	indexes[indexesIndex + 1] = 11;
-	indexes[indexesIndex + 2] = 21;
-	indexesIndex += 3;
-
-	indexes[indexesIndex] = 2;
-	indexes[indexesIndex + 1] = 22;
-	indexes[indexesIndex + 2] = 12;
-	indexesIndex += 3;
-
-	indexes[indexesIndex] = 3;
-	indexes[indexesIndex + 1] = 13;
-	indexes[indexesIndex + 2] = 23;
-	indexesIndex += 3;
-
-	indexes[indexesIndex] = 4;
-	indexes[indexesIndex + 1] = 24;
-	indexes[indexesIndex + 2] = 14;
-	indexesIndex += 3;
-
-	indexes[indexesIndex] = 5;
-	indexes[indexesIndex + 1] = 15;
-	indexes[indexesIndex + 2] = 25;
-	indexesIndex += 3;
-
-	indexes[indexesIndex] = 6;
-	indexes[indexesIndex + 1] = 26;
-	indexes[indexesIndex + 2] = 16;
-	indexesIndex += 3;
-
-	indexes[indexesIndex] = 7;
-	indexes[indexesIndex + 1] = 17;
-	indexes[indexesIndex + 2] = 27;
-	indexesIndex += 3;
-
-	indexes[indexesIndex] = 8;
-	indexes[indexesIndex + 1] = 28;
-	indexes[indexesIndex + 2] = 18;
-	indexesIndex += 3;
-
-	indexes[indexesIndex] = 9;
-	indexes[indexesIndex + 1] = 19;
-	indexes[indexesIndex + 2] = 29;
-	indexesIndex += 3;*/
-
-	/*
-	for (int i = 0; i < (puntas * 2); i++) {
-		indexes[indexesIndex] = i;
-		indexes[indexesIndex + 1] = i + (puntas * 4);
-		indexes[indexesIndex + 2] = i +  (puntas * 2);
-
-		indexesIndex += 3;
-	}*/
-
-	for (int i = 0; i < (1); i++) {
+	for (int i = 0; i < (puntas*2); i++) {
 
 		if (i % 2 == 0) {
 			indexes[indexesIndex] = i;
-			indexes[indexesIndex + 1] = i + (puntas * 4);
-			indexes[indexesIndex + 2] = i + (puntas * 2);
+			indexes[indexesIndex + 1] = i + (5 * 4);
+			indexes[indexesIndex + 2] = i + (5 * 2);
 
-			
+			indexesIndex += 3;
+
 		}
 		else {
 			indexes[indexesIndex] = i;
-			indexes[indexesIndex + 1] = i + (puntas * 4);
-			indexes[indexesIndex + 2] = i + (puntas * 2);
+			indexes[indexesIndex + 1] = i + (5 * 2);
+			indexes[indexesIndex + 2] = i + (5 * 4);
+
+			indexesIndex += 3;
 		}
-		
-		indexesIndex += 3;
+
+
 	}
 
 	InitBuffers();
