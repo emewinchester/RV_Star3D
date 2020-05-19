@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  Figure3D.cpp
+  Model3D.cpp
+  Project3.cpp
+  ShaderProgram.cpp
+  Star3D.cpp
+C:\Users\Marina\Desktop\estrellaRv\Projects\Project3\Project3\Star3D.cpp(61,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Marina\Desktop\estrellaRv\Projects\Project3\Project3\Star3D.cpp(62,21): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Marina\Desktop\estrellaRv\Projects\Project3\Project3\Star3D.cpp(95,26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Generando código...
+  Project3.vcxproj -> C:\Users\Marina\Desktop\estrellaRv\Projects\Project3\Debug\Project3.exe
