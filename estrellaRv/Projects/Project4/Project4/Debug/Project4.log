@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  Camera3D.cpp
+  Figure3D.cpp
+  Ground3D.cpp
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project4\Project4\Ground3D.cpp(25,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project4\Project4\Ground3D.cpp(28,20): warning C4018: '<': no coinciden signed/unsigned
+  Model3D.cpp
+  Project4.cpp
+  Scene3D.cpp
+  ShaderProgram.cpp
+  Star3D.cpp
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project4\Project4\Star3D.cpp(61,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project4\Project4\Star3D.cpp(62,21): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project4\Project4\Star3D.cpp(95,26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Generando código...
+  Project4.vcxproj -> C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project4\Debug\Project4.exe
