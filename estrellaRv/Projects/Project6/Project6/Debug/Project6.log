@@ -1,0 +1,73 @@
+﻿  stdafx.cpp
+  Camera3D.cpp
+  Figure3D.cpp
+  Ground3D.cpp
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Ground3D.cpp(40,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Ground3D.cpp(42,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Ground3D.cpp(44,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Ground3D.cpp(46,20): warning C4018: '<': no coinciden signed/unsigned
+  Light.cpp
+  Material.cpp
+  Model3D.cpp
+  Piramid3D.cpp
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(40,5): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(40,5): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(40,20): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(40,20): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(41,5): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(41,5): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(41,20): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(41,20): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(42,5): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(42,5): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(42,20): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(42,20): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(43,11): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(43,11): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(43,20): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(43,20): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(44,11): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(44,11): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(44,20): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(44,20): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(45,11): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(45,11): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(45,20): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(45,20): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(46,5): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(46,5): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(46,21): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(46,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(47,5): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(47,5): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(47,21): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(47,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(48,5): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(48,5): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(48,21): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(48,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(49,11): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(49,11): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(49,21): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(49,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(50,11): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(50,11): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(50,21): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(50,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(51,11): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(51,11): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(51,21): warning C4838: la conversión de 'double' en 'GLfloat' requiere una conversión de restricción
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(51,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(87,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(89,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(91,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Piramid3D.cpp(93,20): warning C4018: '<': no coinciden signed/unsigned
+  Project6.cpp
+  Scene3D.cpp
+  ShaderProgram.cpp
+  Star3D.cpp
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(63,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(64,21): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(98,26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Generando código...
+  Project6.vcxproj -> C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Debug\Project6.exe

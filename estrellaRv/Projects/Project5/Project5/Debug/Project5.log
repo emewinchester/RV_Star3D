@@ -1,5 +1,0 @@
-﻿  Star3D.cpp
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project5\Project5\Star3D.cpp(62,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project5\Project5\Star3D.cpp(63,21): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project5\Project5\Star3D.cpp(97,26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  Project5.vcxproj -> C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project5\Debug\Project5.exe
