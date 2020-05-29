@@ -25,13 +25,20 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 	normals = new GLfloat[numVertices * 3]; 
 	textures = new GLfloat[numVertices * 2];
 
+
+
+
+	int incRE = puntas * 2 * 2; // incremento para calcular el indice de la punta del radio exterior
+	int incRI = (puntas * 2 + puntas * 2) * 2; // incremento para calcular el indice de la punta del radio interior
+
 	
 
 	int verticesIndex = 0;
+	int texturesIndexes = 0;
 
 	// incremento necesario para hacer la cara delantera y la trasera a la vez
 	int incremento = (puntas * 2 + puntas * 2 + puntas * 2) * 3;
-
+	int incTexturas = (puntas * 2 + puntas * 2 + puntas * 2) * 2;
 
 
 	/**         PUNTA CENTRAL          **/
@@ -43,13 +50,22 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 		vertices[verticesIndex + 1] = 0.0f;	// Y
 		vertices[verticesIndex + 2] = ancho;	// Z
 
+		// Coordenadas de las texturas de los vertices centrales delanteros
+		textures[texturesIndexes] = 0.5f; // X
+		textures[texturesIndexes + 1] = 0.5f; // y
+
 
 		// Puntas traseras
 		vertices[verticesIndex + incremento] = 0.0f;	// X
 		vertices[verticesIndex + 1 + incremento] = 0.0f;	// Y
 		vertices[verticesIndex + 2 + incremento] = -ancho;	// Z
 
+		// Coordenadas de las texturas de los vertices centrales traseros
+		textures[texturesIndexes + incTexturas] = 0.5f; // X
+		textures[texturesIndexes + incTexturas + 1] = 0.5f; // y
+
 		verticesIndex += 3;
+		texturesIndexes += 2;
 	}
 
 
@@ -64,6 +80,7 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 	float anguloDeGiro = (2.0f / numPuntas) * PI;
 
 	float anguloActual = anguloInicio;
+
 
 	// Por cada punta
 	for (int i = 0; i < puntas; i++) {
@@ -80,8 +97,16 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 			vertices[verticesIndex + 1 + incremento] = radioExterior * sin(anguloActual);
 			vertices[verticesIndex + 2 + incremento] = 0.0f;
 
+			// Calculamos coordenadas de las texturas
+			textures[texturesIndexes] = 0.5 + (0.5 * vertices[verticesIndex]) / radioExterior;
+			textures[texturesIndexes +1 ] = 0.5 + (0.5 * vertices[verticesIndex + 1]) / radioExterior;
 
+			textures[texturesIndexes + incTexturas] = 0.5 + (0.5 * vertices[verticesIndex + incremento]) / radioExterior;
+			textures[texturesIndexes + incTexturas + 1] = 0.5 + (0.5 * vertices[verticesIndex + 1 + incremento]) / radioExterior;
+
+			
 			verticesIndex += 3;
+			texturesIndexes += 2;
 		}
 
 		// incrementamos el angulo en 2*PI/puntas
@@ -108,7 +133,14 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 	vertices[verticesIndex + 1 + incremento] = radioInterior * sin(anguloActual);
 	vertices[verticesIndex + 2 + incremento] = 0.0f;
 
+	// Calculamos las texturas
+	textures[texturesIndexes] = 0.5 + (0.5 * vertices[verticesIndex]) / radioInterior;
+	textures[texturesIndexes + 1] = 0.5 + (0.5 * vertices[verticesIndex + 1]) / radioInterior;
+	textures[texturesIndexes + incTexturas] = 0.5 + (0.5 * vertices[verticesIndex + incremento]) / radioInterior;
+	textures[texturesIndexes + incTexturas + 1] = 0.5 + (0.5 * vertices[verticesIndex + 1 + incremento]) / radioInterior;
+
 	verticesIndex += 3;
+	texturesIndexes += 2;
 
 	// incrementamos el angulo en 2*PI/puntas
 	anguloActual += anguloDeGiro;
@@ -129,7 +161,14 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 			vertices[verticesIndex + 1 + incremento] = radioInterior * sin(anguloActual);
 			vertices[verticesIndex + 2 + incremento] = 0.0f;
 
+			// Calculamos las texturas
+			textures[texturesIndexes] = 0.5 + (0.5 * vertices[verticesIndex]) / radioInterior;
+			textures[texturesIndexes + 1] = 0.5 + (0.5 * vertices[verticesIndex + 1]) / radioInterior;
+			textures[texturesIndexes + incTexturas] = 0.5 + (0.5 * vertices[verticesIndex + incremento]) / radioInterior;
+			textures[texturesIndexes + incTexturas + 1] = 0.5 + (0.5 * vertices[verticesIndex + 1 + incremento]) / radioInterior;
+
 			verticesIndex += 3;
+			texturesIndexes += 2;
 		}
 
 		// incrementamos el angulo en 2*PI/puntas
@@ -147,7 +186,14 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 	vertices[verticesIndex + 1 + incremento] = radioInterior * sin(anguloActual);
 	vertices[verticesIndex + 2 + incremento] = 0.0f;
 
+	// Calculamos las texturas
+	textures[texturesIndexes] = 0.5 + (0.5 * vertices[verticesIndex]) / radioInterior;
+	textures[texturesIndexes + 1] = 0.5 + (0.5 * vertices[verticesIndex + 1]) / radioInterior;
+	textures[texturesIndexes + incTexturas] = 0.5 + (0.5 * vertices[verticesIndex + incremento]) / radioInterior;
+	textures[texturesIndexes + incTexturas + 1] = 0.5 + (0.5 * vertices[verticesIndex + 1 + incremento]) / radioInterior;
+
 	verticesIndex += 3;
+	texturesIndexes += 2;
 
 
 
@@ -207,8 +253,8 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 
 	int normalsIndixes = 0;
 	glm::vec3 central, exterior, interior, v1, v2, normal;
-	int incRE = puntas * 2 * 3; // incremento para calcular el indice de la punta del radio exterior
-	int incRI = (puntas * 2 + puntas * 2) * 3; // incremento para calcular el indice de la punta del radio interior
+	incRE = puntas * 2 * 3; // incremento para calcular el indice de la punta del radio exterior
+	incRI = (puntas * 2 + puntas * 2) * 3; // incremento para calcular el indice de la punta del radio interior
 	int modulo = 0;
 
 	// Parte delantera
@@ -258,43 +304,6 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 
 	}
 
-
-
-	/***         CALCULOS DE TEXTURAS        ***/
-
-	int texturesIndexes = 0;
-
-	incRE = puntas * 2 * 2; // incremento para calcular el indice de la punta del radio exterior
-	incRI = (puntas * 2 + puntas * 2) * 2; // incremento para calcular el indice de la punta del radio interior
-
-	int incTexturas = (puntas * 2 + puntas * 2 + puntas * 2) * 2;
-
-	for (int i = 0; i < (puntas * 2 ); i++) {
-
-		// cara delantera
-		textures[texturesIndexes] = 0.0f; //x
-		textures[texturesIndexes] = 0.0f; //y
-
-		textures[texturesIndexes + incRE] = 0.0f; //x
-		textures[texturesIndexes + incRE] = 1.0f; //y
-
-		textures[texturesIndexes + incRI] = 1.0f; //x
-		textures[texturesIndexes + incRI] = 1.0f; //y
-		
-		
-
-		// cara trasera
-		textures[texturesIndexes + incTexturas] = 0.0f; //x
-		textures[texturesIndexes + incTexturas] = 0.0f; //y
-
-		textures[texturesIndexes + incTexturas + incRE] = 0.0f; //x
-		textures[texturesIndexes + incTexturas + incRE] = 1.0f; //y
-
-		textures[texturesIndexes + incTexturas + incRI] = 1.0f; //x
-		textures[texturesIndexes + incTexturas + incRI] = 1.0f; //y
-
-		texturesIndexes += 2;
-	}
 
 	InitBuffers();
 }

@@ -141,7 +141,7 @@ void Scene3D::Draw(ShaderProgram* program, glm::mat4 proj, glm::mat4 view)
 
 	ground->Draw(program, proj, view);
 
-	estrella->Rotate(2.0f, glm::vec3(0.0f, 1.0f, 0.0f));
+	//estrella->Rotate(2.0f, glm::vec3(0.0f, 1.0f, 0.0f));
 	estrella->Draw(program, proj, view);
 }
 
