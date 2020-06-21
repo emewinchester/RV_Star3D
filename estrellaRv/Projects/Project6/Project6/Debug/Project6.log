@@ -1,21 +1,2 @@
-﻿  Star3D.cpp
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(79,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(80,21): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(101,36): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(102,40): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(104,50): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(105,54): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(123,26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(137,34): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(138,38): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(139,48): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(140,52): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(165,36): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(166,40): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(167,50): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(168,54): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(190,34): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(191,38): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(192,48): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Project6\Star3D.cpp(193,52): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+﻿  Scene3D.cpp
   Project6.vcxproj -> C:\Users\Marina\Desktop\RV_Star3D\estrellaRv\Projects\Project6\Debug\Project6.exe

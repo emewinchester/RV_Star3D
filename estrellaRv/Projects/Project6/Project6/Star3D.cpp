@@ -257,7 +257,7 @@ Star3D::Star3D(GLint puntas, GLfloat radioInterior, GLfloat radioExterior, GLflo
 	incRI = (puntas * 2 + puntas * 2) * 3; // incremento para calcular el indice de la punta del radio interior
 	int modulo = 0;
 
-	// Parte delantera
+	
 	for (int i = 0; i < puntas * 4; i++) {
 
 		if (i == puntas * 2) {

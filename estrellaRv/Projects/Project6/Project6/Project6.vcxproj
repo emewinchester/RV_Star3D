@@ -88,7 +88,6 @@
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Model3D.h" />
-    <ClInclude Include="Piramid3D.h" />
     <ClInclude Include="Project6.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Scene3D.h" />
@@ -104,7 +103,6 @@
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Model3D.cpp" />
-    <ClCompile Include="Piramid3D.cpp" />
     <ClCompile Include="Project6.cpp" />
     <ClCompile Include="Scene3D.cpp" />
     <ClCompile Include="ShaderProgram.cpp" />
